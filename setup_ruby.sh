@@ -24,7 +24,6 @@ cd ..
 echo 'install Ruby1.9.2-p320'
 rbenv install 1.9.2-p320
 rbenv rehash
-source ~/.bashrc
 rbenv global 1.9.2-p320
 
 echo 'check'
