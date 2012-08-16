@@ -17,6 +17,7 @@ echo 'ruby-build'
 git clone git://github.com/sstephenson/ruby-build.git
 cd ruby-build
 sudo ./install.sh
+cd ..
 
 # install Ruby 1.9.2-p320
 echo 'install Ruby1.9.2-p320'
