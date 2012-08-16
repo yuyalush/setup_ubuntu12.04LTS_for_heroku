@@ -5,7 +5,8 @@ echo 'git'
 sudo apt-get -y install git
 
 echo 'libs'
-sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev libsqlite3-dev g++ ruby1.9.1-dev
+sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev libsqlite3-dev g++ 
+# ruby1.9.1-dev
 
 echo 'rbenv'
 sudo apt-get -y install rbenv
