@@ -1,8 +1,8 @@
 #!/bin/bash
 # source ~/.bashrc
 
-sudo gem install rails -v=3.2.8
-sudo gem install foreman
+gem install rails -v=3.2.8
+gem install foreman
 rbenv rehash
 rails new testapp --skip-bundle
 cd testapp
