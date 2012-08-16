@@ -10,9 +10,7 @@ sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev li
 echo 'rbenv'
 sudo apt-get -y install rbenv
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-# eval "$(rbenv init -)"
 source ~/.bashrc
-# echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 
 echo 'ruby-build'
 git clone git://github.com/sstephenson/ruby-build.git
@@ -25,25 +23,8 @@ echo 'install Ruby1.9.2-p320'
 rbenv install 1.9.2-p320
 rbenv rehash
 rbenv global 1.9.2-p320
-
-echo 'check'
-ruby -v
-
 echo 'gem: --no-ri --no-rdoc' >> ~/.gemrc
-sudo gem install rails -v=3.2.8
-sudo gem install foreman
-rbenv rehash
 
-# sample app
-rails new testapp --skip-bundle
-cd testapp
-echo "gem 'thin'" >> Gemfile
-echo "web: bundle exec rails server thin -p 3000 -e development" >> Procfile
-sudo bundle install
-
-rails g scaffold Book title:string price:integer
-rake db:migrate
-foreman start
-
+echo 'finish.'
 
 
