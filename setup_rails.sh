@@ -7,6 +7,7 @@ rbenv rehash
 rails new testapp --skip-bundle
 cd testapp
 echo "gem 'thin'" >> Gemfile
+gem 'therubyracer' >> Gemfile
 echo "web: bundle exec rails server thin -p 3000 -e development" >> Procfile
 bundle install
 
