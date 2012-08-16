@@ -25,6 +25,18 @@ rbenv rehash
 rbenv global 1.9.2-p320
 echo 'gem: --no-ri --no-rdoc' >> ~/.gemrc
 
-echo 'finish.'
+gem install rails -v=3.2.8
+gem install foreman
+rbenv rehash
+rails new testapp --skip-bundle
+cd testapp
+echo "gem 'thin'" >> Gemfile
+gem 'therubyracer' >> Gemfile
+echo "web: bundle exec rails server thin -p 3000 -e development" >> Procfile
+bundle install
+
+rails g scaffold Book title:string price:integer
+rake db:migrate
+foreman start
 
 
