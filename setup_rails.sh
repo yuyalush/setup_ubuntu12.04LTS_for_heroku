@@ -8,7 +8,7 @@ rails new testapp --skip-bundle
 cd testapp
 echo "gem 'thin'" >> Gemfile
 echo "web: bundle exec rails server thin -p 3000 -e development" >> Procfile
-sudo bundle install
+bundle install
 
 rails g scaffold Book title:string price:integer
 rake db:migrate
