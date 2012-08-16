@@ -5,7 +5,7 @@ echo 'git'
 sudo apt-get -y install git
 
 echo 'libs'
-sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev libsqlite3-dev g++
+sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev libsqlite3-dev g++ rails1.9.1-dev
 
 echo 'rbenv'
 sudo apt-get -y install rbenv
@@ -22,6 +22,7 @@ sudo ./install.sh
 echo 'install Ruby1.9.2-p320'
 rbenv install 1.9.2-p320
 rbenv rehash
+source ~/.bashrc
 rbenv global 1.9.2-p320
 
 echo 'check'
