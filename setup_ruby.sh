@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Setup for git , Ruby1.9.2 , Rails3.2.8
 
 echo 'git'
