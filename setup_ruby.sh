@@ -10,6 +10,7 @@ sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev li
 echo 'rbenv'
 sudo apt-get -y install rbenv
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+eval "$(rbenv init -)"
 source ~/.bashrc
 
 echo 'ruby-build'
