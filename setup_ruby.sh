@@ -1,5 +1,5 @@
 #!/bin/sh
-# Setup for git , Ruby1.9.2 , Rails
+# Setup for git , Ruby1.9.2 , Rails3.2.8
 
 echo 'git'
 sudo apt-get -y install git
